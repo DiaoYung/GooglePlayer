@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/list_item_bg_selector">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/app_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_launcher"/>
+
+            <TextView
+                android:text="AppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/app_image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:id="@+id/tv_name" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_toRightOf="@id/app_image"
+                android:layout_below="@id/tv_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:rating="2.5"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/custom_ratingbar"
+                android:id="@+id/rb_star" />
+
+            <TextView
+                android:text="3.5M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/app_image"
+                android:layout_below="@id/rb_star"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#cccccc"
+                android:textSize="16sp"
+                android:id="@+id/tv_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_download"
+                    android:id="@+id/iv_download" />
+
+                <TextView
+                    android:text="download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_download" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#8000"/>
+
+        <TextView
+            android:text="hdfjksafkfhkjlasdhfjkhlshkhfksahdkjfhskfhdshjkhjkfjdjkfjdjsklfjkljldskdjlkfjklsdjklfjkjsadjfjkldasjkfdjkljklasjlkjkfsdakjkfkjlsjklfjlk"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="15sp"
+            android:id="@+id/tv_des" />
+
+    </LinearLayout>
+
+</LinearLayout>
